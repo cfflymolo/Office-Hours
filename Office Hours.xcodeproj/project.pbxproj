@@ -34,6 +34,7 @@
 		2F858EE51735E35E004D1028 /* StudentQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F858EE41735E35E004D1028 /* StudentQueueViewController.m */; };
 		2FD4381217362722001A3BA7 /* OfficeHoursAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4381117362722001A3BA7 /* OfficeHoursAPIClient.m */; };
 		2FD438361736E92D001A3BA7 /* NetworkingAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD438351736E92D001A3BA7 /* NetworkingAssistant.m */; };
+		2FE85641173A0BDD00B1EBB6 /* LocalDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE85640173A0BDD00B1EBB6 /* LocalDatabaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		2FD4381117362722001A3BA7 /* OfficeHoursAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeHoursAPIClient.m; path = "Data Controllers/OfficeHoursAPIClient.m"; sourceTree = "<group>"; };
 		2FD438341736E92D001A3BA7 /* NetworkingAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkingAssistant.h; path = Utilities/NetworkingAssistant.h; sourceTree = "<group>"; };
 		2FD438351736E92D001A3BA7 /* NetworkingAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkingAssistant.m; path = Utilities/NetworkingAssistant.m; sourceTree = "<group>"; };
+		2FE8563F173A0BDD00B1EBB6 /* LocalDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalDatabaseManager.h; path = "Data Controllers/LocalDatabaseManager.h"; sourceTree = "<group>"; };
+		2FE85640173A0BDD00B1EBB6 /* LocalDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalDatabaseManager.m; path = "Data Controllers/LocalDatabaseManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,8 @@
 			children = (
 				2FD4381017362722001A3BA7 /* OfficeHoursAPIClient.h */,
 				2FD4381117362722001A3BA7 /* OfficeHoursAPIClient.m */,
+				2FE8563F173A0BDD00B1EBB6 /* LocalDatabaseManager.h */,
+				2FE85640173A0BDD00B1EBB6 /* LocalDatabaseManager.m */,
 			);
 			name = "Data Controllers";
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				2F858EE51735E35E004D1028 /* StudentQueueViewController.m in Sources */,
 				2FD4381217362722001A3BA7 /* OfficeHoursAPIClient.m in Sources */,
 				2FD438361736E92D001A3BA7 /* NetworkingAssistant.m in Sources */,
+				2FE85641173A0BDD00B1EBB6 /* LocalDatabaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

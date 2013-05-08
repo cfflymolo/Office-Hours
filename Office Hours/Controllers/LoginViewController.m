@@ -39,8 +39,6 @@
 - (IBAction)signInPressed
 {
     if ([self validateLoginCredentials]) {
-        // Shoot off HTML request
-        
         [OfficeHoursAPIClient.sharedOfficeAPIClient loginStudentWithUsername:self.username
                                                                  andPassword:self.password];
         
@@ -90,7 +88,6 @@
             break;
         case H_PASSWORD_TEXT_FIELD_TAG:
             [self.passwordTextField resignFirstResponder];
-            [self signInPressed];
             break;
     }
     

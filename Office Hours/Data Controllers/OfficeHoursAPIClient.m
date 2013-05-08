@@ -10,7 +10,7 @@
 
 @implementation OfficeHoursAPIClient
 
-#define BASE_URL_STRING @"http://officehoursatthack.appspot.com/"
+#define BASE_URL_STRING @"http://www.example.com/"
 
 + (OfficeHoursAPIClient *)sharedOfficeAPIClient
 {
