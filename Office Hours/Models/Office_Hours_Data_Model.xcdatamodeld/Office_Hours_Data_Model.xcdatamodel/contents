@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Department" syncable="YES">
+    <entity name="Department" representedClassName="Department" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Section" inverseName="department" inverseEntity="Section" syncable="YES"/>
     </entity>
-    <entity name="Office" syncable="YES">
+    <entity name="Office" representedClassName="Office" syncable="YES">
         <attribute name="building" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="roomNumber" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="teacher" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="office" inverseEntity="Teacher" syncable="YES"/>
     </entity>
-    <entity name="Question" syncable="YES">
+    <entity name="Question" representedClassName="Question" syncable="YES">
         <attribute name="answered" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="submissionDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="askedBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="questions" inverseEntity="Student" syncable="YES"/>
     </entity>
-    <entity name="Section" syncable="YES">
+    <entity name="Section" representedClassName="Section" syncable="YES">
         <attribute name="classRoom" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="daysInSession" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
@@ -23,12 +24,15 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="units" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="department" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="sections" inverseEntity="Department" syncable="YES"/>
+        <relationship name="taughtBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="teaches" inverseEntity="Teacher" syncable="YES"/>
     </entity>
-    <entity name="Session" syncable="YES">
+    <entity name="Session" representedClassName="Session" syncable="YES">
         <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="hostedBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="currentSession" inverseEntity="Teacher" syncable="YES"/>
     </entity>
-    <entity name="Student" syncable="YES">
+    <entity name="Student" representedClassName="Student" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
@@ -39,18 +43,20 @@
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="askedBy" inverseEntity="Question" syncable="YES"/>
     </entity>
-    <entity name="Teacher" syncable="YES">
+    <entity name="Teacher" representedClassName="Teacher" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="currentSession" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="hostedBy" inverseEntity="Session" syncable="YES"/>
         <relationship name="office" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Office" inverseName="teacher" inverseEntity="Office" syncable="YES"/>
+        <relationship name="teaches" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="taughtBy" inverseEntity="Section" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Office" positionX="-225" positionY="-0" width="128" height="103"/>
-        <element name="Question" positionX="531" positionY="27" width="128" height="103"/>
-        <element name="Session" positionX="135" positionY="-18" width="128" height="75"/>
-        <element name="Student" positionX="331" positionY="-87" width="128" height="178"/>
-        <element name="Teacher" positionX="-45" positionY="-90" width="128" height="88"/>
-        <element name="Section" positionX="160" positionY="192" width="128" height="150"/>
-        <element name="Department" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Department" positionX="63" positionY="171" width="128" height="73"/>
+        <element name="Office" positionX="-0" positionY="-45" width="128" height="103"/>
+        <element name="Question" positionX="-173" positionY="432" width="128" height="103"/>
+        <element name="Section" positionX="-189" positionY="153" width="128" height="178"/>
+        <element name="Session" positionX="-450" positionY="-18" width="128" height="88"/>
+        <element name="Student" positionX="-405" positionY="261" width="128" height="178"/>
+        <element name="Teacher" positionX="-182" positionY="-81" width="128" height="118"/>
     </elements>
 </model>
