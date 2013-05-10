@@ -33,6 +33,7 @@
 		2F858EE21735C3FF004D1028 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F858EE11735C3FF004D1028 /* RegistrationViewController.m */; };
 		2F858EE51735E35E004D1028 /* StudentQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F858EE41735E35E004D1028 /* StudentQueueViewController.m */; };
 		2F9AB9FC173CC1A30024560B /* Student+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AB9FB173CC1A30024560B /* Student+CRUD.m */; };
+		2F9AB9FF173CC3D50024560B /* LocalRepositoryAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AB9FE173CC3D50024560B /* LocalRepositoryAssistant.m */; };
 		2FD17FFE173CC01E00ADABBB /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD17FFD173CC01E00ADABBB /* Session.m */; };
 		2FD18001173CC01E00ADABBB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD18000173CC01E00ADABBB /* Teacher.m */; };
 		2FD18004173CC01E00ADABBB /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD18003173CC01E00ADABBB /* Section.m */; };
@@ -90,6 +91,8 @@
 		2F858EE41735E35E004D1028 /* StudentQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentQueueViewController.m; path = Controllers/StudentQueueViewController.m; sourceTree = "<group>"; };
 		2F9AB9FA173CC1A30024560B /* Student+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Student+CRUD.h"; path = "Models/Categories/Student+CRUD.h"; sourceTree = "<group>"; };
 		2F9AB9FB173CC1A30024560B /* Student+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student+CRUD.m"; path = "Models/Categories/Student+CRUD.m"; sourceTree = "<group>"; };
+		2F9AB9FD173CC3D50024560B /* LocalRepositoryAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalRepositoryAssistant.h; path = Utilities/LocalRepositoryAssistant.h; sourceTree = "<group>"; };
+		2F9AB9FE173CC3D50024560B /* LocalRepositoryAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalRepositoryAssistant.m; path = Utilities/LocalRepositoryAssistant.m; sourceTree = "<group>"; };
 		2FD17FFC173CC01E00ADABBB /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = Models/Session.h; sourceTree = "<group>"; };
 		2FD17FFD173CC01E00ADABBB /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Session.m; path = Models/Session.m; sourceTree = "<group>"; };
 		2FD17FFF173CC01E00ADABBB /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teacher.h; path = Models/Teacher.h; sourceTree = "<group>"; };
@@ -291,6 +294,8 @@
 			children = (
 				2FD438341736E92D001A3BA7 /* NetworkingAssistant.h */,
 				2FD438351736E92D001A3BA7 /* NetworkingAssistant.m */,
+				2F9AB9FD173CC3D50024560B /* LocalRepositoryAssistant.h */,
+				2F9AB9FE173CC3D50024560B /* LocalRepositoryAssistant.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				2FD1800D173CC01E00ADABBB /* Department.m in Sources */,
 				2FD18010173CC01E00ADABBB /* Student.m in Sources */,
 				2F9AB9FC173CC1A30024560B /* Student+CRUD.m in Sources */,
+				2F9AB9FF173CC3D50024560B /* LocalRepositoryAssistant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
