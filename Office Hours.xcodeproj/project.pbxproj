@@ -218,8 +218,8 @@
 		2F858EB7173596F3004D1028 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2F9AB9F9173CC1910024560B /* Categories */,
 				2F858EDD1735A56B004D1028 /* Office_Hours_Data_Model.xcdatamodeld */,
+				2F9AB9F9173CC1910024560B /* Categories */,
 				2FD1800B173CC01E00ADABBB /* Department.h */,
 				2FD1800C173CC01E00ADABBB /* Department.m */,
 				2FD18008173CC01E00ADABBB /* Office.h */,
