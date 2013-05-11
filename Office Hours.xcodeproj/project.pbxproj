@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6B0C80173EC471004D83AE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B0C7F173EC471004D83AE /* Student.m */; };
 		2F858E93173596D6004D1028 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F858E92173596D6004D1028 /* UIKit.framework */; };
 		2F858E95173596D6004D1028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F858E94173596D6004D1028 /* Foundation.framework */; };
 		2F858E97173596D6004D1028 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F858E96173596D6004D1028 /* CoreGraphics.framework */; };
@@ -41,13 +42,15 @@
 		2FD18007173CC01E00ADABBB /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD18006173CC01E00ADABBB /* Question.m */; };
 		2FD1800A173CC01E00ADABBB /* Office.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD18009173CC01E00ADABBB /* Office.m */; };
 		2FD1800D173CC01E00ADABBB /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1800C173CC01E00ADABBB /* Department.m */; };
-		2FD18010173CC01E00ADABBB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1800F173CC01E00ADABBB /* Student.m */; };
 		2FD4381217362722001A3BA7 /* OfficeHoursAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4381117362722001A3BA7 /* OfficeHoursAPIClient.m */; };
 		2FD438361736E92D001A3BA7 /* NetworkingAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD438351736E92D001A3BA7 /* NetworkingAssistant.m */; };
 		2FE85641173A0BDD00B1EBB6 /* LocalDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE85640173A0BDD00B1EBB6 /* LocalDatabaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F6B0C75173EBD9D004D83AE /* OfficeHoursConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeHoursConstants.h; path = Utilities/OfficeHoursConstants.h; sourceTree = "<group>"; };
+		2F6B0C7E173EC471004D83AE /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		2F6B0C7F173EC471004D83AE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		2F858E8F173596D6004D1028 /* Office Hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Office Hours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F858E92173596D6004D1028 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F858E94173596D6004D1028 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,8 +110,6 @@
 		2FD18009173CC01E00ADABBB /* Office.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Office.m; path = Models/Office.m; sourceTree = "<group>"; };
 		2FD1800B173CC01E00ADABBB /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Department.h; path = Models/Department.h; sourceTree = "<group>"; };
 		2FD1800C173CC01E00ADABBB /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Department.m; path = Models/Department.m; sourceTree = "<group>"; };
-		2FD1800E173CC01E00ADABBB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = Models/Student.h; sourceTree = "<group>"; };
-		2FD1800F173CC01E00ADABBB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = Models/Student.m; sourceTree = "<group>"; };
 		2FD4381017362722001A3BA7 /* OfficeHoursAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeHoursAPIClient.h; path = "Data Controllers/OfficeHoursAPIClient.h"; sourceTree = "<group>"; };
 		2FD4381117362722001A3BA7 /* OfficeHoursAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeHoursAPIClient.m; path = "Data Controllers/OfficeHoursAPIClient.m"; sourceTree = "<group>"; };
 		2FD438341736E92D001A3BA7 /* NetworkingAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkingAssistant.h; path = Utilities/NetworkingAssistant.h; sourceTree = "<group>"; };
@@ -230,8 +231,8 @@
 				2FD18003173CC01E00ADABBB /* Section.m */,
 				2FD17FFC173CC01E00ADABBB /* Session.h */,
 				2FD17FFD173CC01E00ADABBB /* Session.m */,
-				2FD1800E173CC01E00ADABBB /* Student.h */,
-				2FD1800F173CC01E00ADABBB /* Student.m */,
+				2F6B0C7E173EC471004D83AE /* Student.h */,
+				2F6B0C7F173EC471004D83AE /* Student.m */,
 				2FD17FFF173CC01E00ADABBB /* Teacher.h */,
 				2FD18000173CC01E00ADABBB /* Teacher.m */,
 			);
@@ -300,6 +301,7 @@
 				2FD438351736E92D001A3BA7 /* NetworkingAssistant.m */,
 				2F9AB9FD173CC3D50024560B /* LocalRepositoryAssistant.h */,
 				2F9AB9FE173CC3D50024560B /* LocalRepositoryAssistant.m */,
+				2F6B0C75173EBD9D004D83AE /* OfficeHoursConstants.h */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -393,9 +395,9 @@
 				2FD18007173CC01E00ADABBB /* Question.m in Sources */,
 				2FD1800A173CC01E00ADABBB /* Office.m in Sources */,
 				2FD1800D173CC01E00ADABBB /* Department.m in Sources */,
-				2FD18010173CC01E00ADABBB /* Student.m in Sources */,
 				2F9AB9FC173CC1A30024560B /* Student+CRUD.m in Sources */,
 				2F9AB9FF173CC3D50024560B /* LocalRepositoryAssistant.m in Sources */,
+				2F6B0C80173EC471004D83AE /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

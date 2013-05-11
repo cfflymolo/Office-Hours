@@ -2,12 +2,13 @@
 //  Student.m
 //  Office Hours
 //
-//  Created by Robert Colin on 5/9/13.
+//  Created by Robert Colin on 5/11/13.
 //
 //
 
 #import "Student.h"
 #import "Question.h"
+#import "Section.h"
 
 
 @implementation Student
@@ -18,8 +19,8 @@
 @dynamic middleName;
 @dynamic password;
 @dynamic phoneNumber;
-@dynamic studentClass;
 @dynamic username;
 @dynamic questions;
+@dynamic enrolledIn;
 
 @end

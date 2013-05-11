@@ -7,6 +7,8 @@
 //
 
 #import "Student.h"
+#import "LocalRepositoryAssistant.h"
+#import "OfficeHoursConstants.h"
 
 @interface Student (CRUD)
 
@@ -18,8 +20,8 @@
 
 + (Student *)requestStudentWithEmailAddress:(NSString *)emailAddress inManagedObjectContext:(NSManagedObjectContext *)context;
 
-- (void)updatePropertiesForStudent:(Student *)student withUsername:(NSString *)username password:(NSString *)student emailAddress:(NSString *)emailAddress phoneNumber:(NSString *)phoneNumber inManagedObjectContext:(NSManagedObjectContext *)context;
++ (void)updatePropertiesForStudent:(Student *)student withUsername:(NSString *)username password:(NSString *)password emailAddress:(NSString *)emailAddress phoneNumber:(NSString *)phoneNumber;
 
-- (void)deleteStudent:(Student *)student inManagedObjectContext:(NSManagedObjectContext *)context;
++ (void)deleteStudentWithEmailAddress:(NSString *)emailAddress inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end

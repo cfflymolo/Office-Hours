@@ -25,6 +25,7 @@
         <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="units" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="department" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="sections" inverseEntity="Department" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="enrolledIn" inverseEntity="Student" syncable="YES"/>
         <relationship name="taughtBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="teaches" inverseEntity="Teacher" syncable="YES"/>
     </entity>
     <entity name="Session" representedClassName="Session" syncable="YES">
@@ -39,8 +40,8 @@
         <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="studentClass" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="enrolledIn" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Section" inverseName="students" inverseEntity="Section" syncable="YES"/>
         <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="askedBy" inverseEntity="Question" syncable="YES"/>
     </entity>
     <entity name="Teacher" representedClassName="Teacher" syncable="YES">
@@ -53,10 +54,10 @@
     <elements>
         <element name="Department" positionX="63" positionY="171" width="128" height="73"/>
         <element name="Office" positionX="-0" positionY="-45" width="128" height="103"/>
-        <element name="Question" positionX="-173" positionY="432" width="128" height="103"/>
-        <element name="Section" positionX="-189" positionY="153" width="128" height="178"/>
-        <element name="Session" positionX="-450" positionY="-18" width="128" height="88"/>
-        <element name="Student" positionX="-405" positionY="261" width="128" height="178"/>
-        <element name="Teacher" positionX="-182" positionY="-81" width="128" height="118"/>
+        <element name="Question" positionX="-191" positionY="432" width="128" height="103"/>
+        <element name="Section" positionX="-189" positionY="153" width="128" height="193"/>
+        <element name="Session" positionX="-434" positionY="-18" width="128" height="88"/>
+        <element name="Student" positionX="-441" positionY="227" width="128" height="178"/>
+        <element name="Teacher" positionX="-191" positionY="-90" width="128" height="118"/>
     </elements>
 </model>
