@@ -34,6 +34,7 @@
 		2F858EE51735E35E004D1028 /* StudentQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F858EE41735E35E004D1028 /* StudentQueueViewController.m */; };
 		2F9AB9FC173CC1A30024560B /* Student+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AB9FB173CC1A30024560B /* Student+CRUD.m */; };
 		2F9AB9FF173CC3D50024560B /* LocalRepositoryAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9AB9FE173CC3D50024560B /* LocalRepositoryAssistant.m */; };
+		2F9ABA01173DFA3F0024560B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9ABA00173DFA3F0024560B /* CoreData.framework */; };
 		2FD17FFE173CC01E00ADABBB /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD17FFD173CC01E00ADABBB /* Session.m */; };
 		2FD18001173CC01E00ADABBB /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD18000173CC01E00ADABBB /* Teacher.m */; };
 		2FD18004173CC01E00ADABBB /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD18003173CC01E00ADABBB /* Section.m */; };
@@ -93,6 +94,7 @@
 		2F9AB9FB173CC1A30024560B /* Student+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student+CRUD.m"; path = "Models/Categories/Student+CRUD.m"; sourceTree = "<group>"; };
 		2F9AB9FD173CC3D50024560B /* LocalRepositoryAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalRepositoryAssistant.h; path = Utilities/LocalRepositoryAssistant.h; sourceTree = "<group>"; };
 		2F9AB9FE173CC3D50024560B /* LocalRepositoryAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalRepositoryAssistant.m; path = Utilities/LocalRepositoryAssistant.m; sourceTree = "<group>"; };
+		2F9ABA00173DFA3F0024560B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2FD17FFC173CC01E00ADABBB /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = Models/Session.h; sourceTree = "<group>"; };
 		2FD17FFD173CC01E00ADABBB /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Session.m; path = Models/Session.m; sourceTree = "<group>"; };
 		2FD17FFF173CC01E00ADABBB /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teacher.h; path = Models/Teacher.h; sourceTree = "<group>"; };
@@ -120,11 +122,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F858EDC1735A3EC004D1028 /* SystemConfiguration.framework in Frameworks */,
-				2F858EDA1735A3E6004D1028 /* MobileCoreServices.framework in Frameworks */,
-				2F858E93173596D6004D1028 /* UIKit.framework in Frameworks */,
-				2F858E95173596D6004D1028 /* Foundation.framework in Frameworks */,
+				2F9ABA01173DFA3F0024560B /* CoreData.framework in Frameworks */,
 				2F858E97173596D6004D1028 /* CoreGraphics.framework in Frameworks */,
+				2F858E95173596D6004D1028 /* Foundation.framework in Frameworks */,
+				2F858EDA1735A3E6004D1028 /* MobileCoreServices.framework in Frameworks */,
+				2F858EDC1735A3EC004D1028 /* SystemConfiguration.framework in Frameworks */,
+				2F858E93173596D6004D1028 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,11 +155,12 @@
 		2F858E91173596D6004D1028 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F858EDB1735A3EC004D1028 /* SystemConfiguration.framework */,
-				2F858ED91735A3E6004D1028 /* MobileCoreServices.framework */,
-				2F858E92173596D6004D1028 /* UIKit.framework */,
-				2F858E94173596D6004D1028 /* Foundation.framework */,
+				2F9ABA00173DFA3F0024560B /* CoreData.framework */,
 				2F858E96173596D6004D1028 /* CoreGraphics.framework */,
+				2F858E94173596D6004D1028 /* Foundation.framework */,
+				2F858ED91735A3E6004D1028 /* MobileCoreServices.framework */,
+				2F858EDB1735A3EC004D1028 /* SystemConfiguration.framework */,
+				2F858E92173596D6004D1028 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
