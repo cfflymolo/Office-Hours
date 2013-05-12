@@ -20,6 +20,8 @@
 
 + (Student *)requestStudentWithEmailAddress:(NSString *)emailAddress inManagedObjectContext:(NSManagedObjectContext *)context;
 
++ (Student *)requestStudentWithUsername:(NSString *)username inManagedObjectContext:(NSManagedObjectContext *)context;
+
 + (void)updatePropertiesForStudent:(Student *)student withUsername:(NSString *)username password:(NSString *)password emailAddress:(NSString *)emailAddress phoneNumber:(NSString *)phoneNumber;
 
 + (void)deleteStudentWithEmailAddress:(NSString *)emailAddress inManagedObjectContext:(NSManagedObjectContext *)context;

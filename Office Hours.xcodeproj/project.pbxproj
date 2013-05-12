@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F6B0C80173EC471004D83AE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B0C7F173EC471004D83AE /* Student.m */; };
+		2F6B0C84173F10F3004D83AE /* OfficeHoursLocalRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B0C83173F10F3004D83AE /* OfficeHoursLocalRepository.m */; };
 		2F858E93173596D6004D1028 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F858E92173596D6004D1028 /* UIKit.framework */; };
 		2F858E95173596D6004D1028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F858E94173596D6004D1028 /* Foundation.framework */; };
 		2F858E97173596D6004D1028 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F858E96173596D6004D1028 /* CoreGraphics.framework */; };
@@ -51,6 +52,8 @@
 		2F6B0C75173EBD9D004D83AE /* OfficeHoursConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeHoursConstants.h; path = Utilities/OfficeHoursConstants.h; sourceTree = "<group>"; };
 		2F6B0C7E173EC471004D83AE /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		2F6B0C7F173EC471004D83AE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		2F6B0C82173F10F3004D83AE /* OfficeHoursLocalRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfficeHoursLocalRepository.h; path = "Business Logic/OfficeHoursLocalRepository.h"; sourceTree = "<group>"; };
+		2F6B0C83173F10F3004D83AE /* OfficeHoursLocalRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfficeHoursLocalRepository.m; path = "Business Logic/OfficeHoursLocalRepository.m"; sourceTree = "<group>"; };
 		2F858E8F173596D6004D1028 /* Office Hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Office Hours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F858E92173596D6004D1028 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F858E94173596D6004D1028 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F6B0C81173F0FA4004D83AE /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2F6B0C82173F10F3004D83AE /* OfficeHoursLocalRepository.h */,
+				2F6B0C83173F10F3004D83AE /* OfficeHoursLocalRepository.m */,
+			);
+			name = "Business Logic";
+			sourceTree = "<group>";
+		};
 		2F858E86173596D6004D1028 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +181,7 @@
 		2F858E98173596D6004D1028 /* Office Hours */ = {
 			isa = PBXGroup;
 			children = (
+				2F6B0C81173F0FA4004D83AE /* Business Logic */,
 				2FD438331736E8FA001A3BA7 /* Utilities */,
 				2F858EB7173596F3004D1028 /* Models */,
 				2F858EB6173596EC004D1028 /* Controllers */,
@@ -398,6 +411,7 @@
 				2F9AB9FC173CC1A30024560B /* Student+CRUD.m in Sources */,
 				2F9AB9FF173CC3D50024560B /* LocalRepositoryAssistant.m in Sources */,
 				2F6B0C80173EC471004D83AE /* Student.m in Sources */,
+				2F6B0C84173F10F3004D83AE /* OfficeHoursLocalRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
